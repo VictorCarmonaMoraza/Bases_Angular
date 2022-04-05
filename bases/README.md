@@ -1,7 +1,7 @@
-## 5 - Recorrer un listado o arreglo
+## 6 - Crear Componentes hijos and @Input(), pasar informacion del componente padre al hijo
 
-Hemos creado un listado de personajes que a su vez son de tipo Personaje y para recorrerlo hemos utilizado el *ngFor.
-Para imprimir cada de sus datos hemos utilizado el nombre de la variable con punto y su propiedad.
-Tambien hemos agregado el nuevo personaje creado para que se muestre en el listado mediante el metodo push y posteriromente hemos reseteado los campos de formulario
+Hemos creado un nuevo componente que sera un componete hijo al cual le llegara el listado de personajes desde el componente padre agracias al decorador @Input()
+
+
 
 

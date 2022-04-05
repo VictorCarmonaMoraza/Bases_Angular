@@ -1,6 +1,5 @@
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component, OnInit } from '@angular/core';
-import { Personaje } from 'src/app/Interfaces/Personaje';
+import { Component} from '@angular/core';
+import { Personaje} from 'src/app/Interfaces/Personaje';
 
 @Component({
   selector: 'app-main-page',
