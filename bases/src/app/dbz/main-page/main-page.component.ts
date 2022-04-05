@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ok } from 'assert';
+import { Personaje } from 'src/app/Interfaces/Personaje';
 
 @Component({
   selector: 'app-main-page',
@@ -8,10 +8,14 @@ import { ok } from 'assert';
 })
 export class MainPageComponent {
 
+  nuevo: Personaje = {
+    nombre: 'Trucks',
+    poder: 14000
+  }
 
   agregar() {
     //Con esto evitamos refresco del navegador
-    event.preventDefault();
-    console.log('Hola');
+    //event.preventDefault();
+    console.log(this.nuevo);
   }
 }

@@ -1,3 +1,6 @@
-## 3 -FormsModule
+## 4 - ngModel
 
-Cuando haciamos click sobre el boton siempre se hacia un refresco de la pagina por lo cual era incomodo trabajar por lo cual hemos decidido solucionarlo importanto el module FormModule y cambiado (submit) por (ngSubmit)
+Hemos creado una interface para representar los objetos.
+Para utilizar ngModel necesitamos que en el tag este el atributo name.
+
+name="poder" [(ngModel)]="nuevo.poder"

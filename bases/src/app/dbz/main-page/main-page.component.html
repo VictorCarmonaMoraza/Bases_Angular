@@ -18,9 +18,10 @@
 
     <!--Definimos un formulario-->
     <form (ngSubmit)="agregar()">
-      <input placeholder="Nombre " type="text"/>
 
-      <input type="number" placeholder="Poder"/>
+      <input placeholder="Nombre " type="text" name="nombre" [(ngModel)]="nuevo.nombre"/>
+
+      <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder"/>
 
       <button type="submit" class="btn btn-primary">
         Agregar
