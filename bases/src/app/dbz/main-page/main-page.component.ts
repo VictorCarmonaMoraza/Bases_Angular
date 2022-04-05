@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from 'src/app/Interfaces/Personaje';
 
@@ -8,14 +9,25 @@ import { Personaje } from 'src/app/Interfaces/Personaje';
 })
 export class MainPageComponent {
 
+  //Arreglo de personajes
+  personajes: Personaje[] = [
+    {nombre:'Krillim', poder:700},
+    { nombre: 'Goku', poder: 15000},
+    { nombre: 'Vegeta', poder: 8500}
+  ]
+
   nuevo: Personaje = {
-    nombre: 'Trucks',
-    poder: 14000
+    nombre: '',
+    poder: 0
   }
 
   agregar() {
-    //Con esto evitamos refresco del navegador
-    //event.preventDefault();
+    //Si el campo nombre esta vacio salimos del metodo agregar
+    if (this.nuevo.nombre.trim().length ===0) {
+      return;
+   }
     console.log(this.nuevo);
+    this.personajes.push(this.nuevo);
+    this.nuevo = {nombre:'',poder:0}
   }
 }
