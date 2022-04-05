@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.row
+{
+  display: flex;
+}
+
+.col{
+  /*En la misma linea*/
+  flex-grow:1;
+  /*Separacion*/
+  margin-right: 10px;
+}
+
+input{
+  display: block;
+  margin: 5px;
+}
