@@ -1,6 +1,6 @@
-## 6 - Crear Componentes hijos and @Input(), pasar informacion del componente padre al hijo
+## 7 - @Output() y EventEmitter
 
-Hemos creado un nuevo componente que sera un componete hijo al cual le llegara el listado de personajes desde el componente padre agracias al decorador @Input()
+Hemos creado la logica necesaria para emitir la creacion de un personaje mediante el decorador @Output() y recibirlo para su agregacion al arreglo de elementos
 
 
 
