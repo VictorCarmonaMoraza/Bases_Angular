@@ -1,6 +1,6 @@
-## 8 -  Servicios
+## 9 -  Centralizar el acceso  de los personajes en el servicio
 
-Hemos creado nuestro primer servicio y en el constructor de otra clase hemos hecho la injeccion de dependencia del servicio para que pueda mostrar el mensaje del servicio
+Hemos centralizado que el arreglo de personajes venga desde el servicio y asi poder limpiar codigo
 
 
 

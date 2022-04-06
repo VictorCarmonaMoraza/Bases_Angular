@@ -1,3 +1,4 @@
+import { DbzService } from './../../services/dbz.service';
 import { Personaje } from './../../Interfaces/Personaje';
 import { Component, Input } from '@angular/core';
 
@@ -8,7 +9,12 @@ import { Component, Input } from '@angular/core';
 })
 export class PersonajesComponent {
 
-  @Input() personajesRecibidos:Personaje[]=[]
+  //@Input() personajesRecibidos:Personaje[]=[]
 
+  constructor(private dbzService:DbzService){}
 
+  //Get + nombrePropiedad que despues recorreremos
+  get personajesRecibidos() {
+    return this.dbzService.personajes;
+  }
 }
