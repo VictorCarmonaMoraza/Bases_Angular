@@ -12,11 +12,21 @@ export class DbzService {
     { nombre: 'Goku', poder: 15000 },
     { nombre: 'Vegeta', poder: 8500 }
   ];
+
+  constructor() {
+    console.log('Servicio Inicializado')
+  }
+
+  //Devuelve todos los personajes
   get personajes():Personaje[] {
     return [...this._personajes];
   }
 
-  constructor() {
-    console.log('Servicio Inicializado')
-   }
+  //Agrega el personaje recibido al arreglo
+  agregarPersonaje(argumento:Personaje): void {
+    this._personajes.push(argumento);
+  }
+
+
+
 }

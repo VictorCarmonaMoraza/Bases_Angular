@@ -9,8 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class PersonajesComponent {
 
-  //@Input() personajesRecibidos:Personaje[]=[]
-
   constructor(private dbzService:DbzService){}
 
   //Get + nombrePropiedad que despues recorreremos

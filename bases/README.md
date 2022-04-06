@@ -1,6 +1,6 @@
-## 9 -  Centralizar el acceso  de los personajes en el servicio
+## 10 - Metodos en el servicio
 
-Hemos centralizado que el arreglo de personajes venga desde el servicio y asi poder limpiar codigo
+Se crea le metodo en el servicio para poder llamar al agregar y asi evitamos tener que emitir un evento
 
 
 
