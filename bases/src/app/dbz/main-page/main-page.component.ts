@@ -1,3 +1,4 @@
+import { DbzService } from './../../services/dbz.service';
 import { Component} from '@angular/core';
 import { Personaje} from 'src/app/Interfaces/Personaje';
 
@@ -7,6 +8,10 @@ import { Personaje} from 'src/app/Interfaces/Personaje';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent {
+
+  constructor(dbzService: DbzService) {
+    
+  }
 
   //Arreglo de personajes
   personajes: Personaje[] = [

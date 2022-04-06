@@ -1,6 +1,6 @@
-## 7 - @Output() y EventEmitter
+## 8 -  Servicios
 
-Hemos creado la logica necesaria para emitir la creacion de un personaje mediante el decorador @Output() y recibirlo para su agregacion al arreglo de elementos
+Hemos creado nuestro primer servicio y en el constructor de otra clase hemos hecho la injeccion de dependencia del servicio para que pueda mostrar el mensaje del servicio
 
 
 
